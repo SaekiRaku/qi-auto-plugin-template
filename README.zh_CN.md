@@ -17,6 +17,7 @@
 ### 基础
 
 ```
+# 在 GitHub 上点击 `Use this template（使用该模板）` 或者直接克隆该仓库。
 npm i
 # 安装依赖
 ```

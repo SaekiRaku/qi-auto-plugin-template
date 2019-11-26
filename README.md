@@ -26,11 +26,12 @@ npm i
 #### Development
 
 ```
+# Click `Use this template` on GitHub or clone this repository.
 npm run dev
 # Start the development environment
 ```
 
-This command will auto (re)build the plugin when the source code files have been modified. And (re)load the `source/index.example.js` automaticly.
+This command will auto (re)build the plugin when the source code files have been modified. And (re)load the `source/index.example.js` automatically.
 
 #### Build
 
