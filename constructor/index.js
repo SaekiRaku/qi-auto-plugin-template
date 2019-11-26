@@ -1,10 +1,16 @@
-import { rollup, watch } from "rollup"
+import {
+    rollup,
+    watch
+} from "rollup"
 import config from "./config.js";
 
 export default {
     dev(callback) {
         let watcher = watch(config.input);
         watcher.on("event", (evt) => {
+            if (evt.code == "ERROR") {
+                console.error(evt);
+            }
             if (evt.code == "END") {
                 callback();
             }
