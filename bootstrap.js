@@ -6,11 +6,11 @@ switch (cmd) {
     case "dev":
         constructor.dev(() => {
             for (let i in require.cache) {
-                if (i.indexOf(__dirname) != -1 && /(source|dist)/.test(i)) {
+                if (i.indexOf(__dirname) != -1 && /(source|dist|example)/.test(i)) {
                     delete require.cache[i]
                 }
             }
-            require("./source/index.example.js");
+            require("./example/index.js");
         });
     case "build":
         constructor.build();

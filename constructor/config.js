@@ -9,6 +9,18 @@ const {
     name
 } = common.manifest;
 
+const output = [{
+        name,
+        format: "cjs",
+        file: path.resolve(common.path.DIST, "index.js")
+    },
+    {
+        name,
+        format: "esm",
+        file: path.resolve(common.path.DIST, "index.es.js")
+    }
+]
+
 const plugins = [
     strip(),
     babel()
@@ -17,22 +29,8 @@ const plugins = [
 export default {
     input: {
         input: path.resolve(common.path.SOURCE, "index.js"),
-        output: {
-            name,
-            format: "cjs",
-            file: path.resolve(common.path.DIST, ".cache", "index.js")
-        },
+        output,
         plugins
     },
-    output: [{
-            name,
-            format: "cjs",
-            file: path.resolve(common.path.DIST, "index.js")
-        },
-        {
-            name,
-            format: "esm",
-            file: path.resolve(common.path.DIST, "index.es.js")
-        }
-    ]
+    output
 }

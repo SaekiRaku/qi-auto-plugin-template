@@ -1,6 +1,6 @@
 import qiauto from "@qiqi1996/qi-auto";
 import common from "../common";
-import plugin from "../dist/.cache/index.js";
+import plugin from "../dist/index.js";
 
 const auto = new qiauto({
     "task1": {
