@@ -22,8 +22,8 @@ const output = [{
 ]
 
 const plugins = [
-    strip(),
-    babel()
+    babel(),
+    strip()
 ]
 
 export default {

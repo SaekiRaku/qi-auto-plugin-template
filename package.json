@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "node -r esm bootstrap.js dev",
     "build": "node -r esm bootstrap.js build",
-    "test": "npm run build && mocha --require @babel/register ./test/**/*.test.js"
+    "test": "npm run build && mocha --require @babel/register,./test/mocha-global.js ./test/**/*.test.js"
   },
   "repository": {
     "type": "git",
