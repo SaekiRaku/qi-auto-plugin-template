@@ -17,9 +17,11 @@
 ### 基础
 
 ```
-# 在 GitHub 上点击 `Use this template（使用该模板）` 或者直接克隆该仓库。
+# 在 GitHub 上点击 `Use this template（使用该模板）` 并克隆仓库。
 npm i
 # 安装依赖
+npm run init
+# （可选操作）此命令将帮助您修改 package.json 和 manifest.json 。
 ```
 
 ### 命令

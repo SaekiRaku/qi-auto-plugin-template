@@ -17,8 +17,11 @@ This repository will help you build plugins of `qi-auto` more easier.
 ### Basic
 
 ```
+# Click `Use this template` on GitHub and clone repository.
 npm i
 # Install the dependencies
+npm run init
+# (Optional) This command will help you modify the package.json and manifest.json
 ```
 
 ### Command
@@ -26,7 +29,6 @@ npm i
 #### Development
 
 ```
-# Click `Use this template` on GitHub or clone this repository.
 npm run dev
 # Start the development environment
 ```

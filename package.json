@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "scripts": {
+    "init": "node init.js",
     "dev": "node -r esm bootstrap.js dev",
     "build": "node -r esm bootstrap.js build",
     "test": "npm run build && mocha --require @babel/register,./test/mocha-global.js ./test/**/*.test.js"
@@ -27,6 +28,8 @@
     "@qiqi1996/qi-auto": "^1.2.2",
     "@rollup/plugin-strip": "^1.3.1",
     "esm": "^3.2.25",
+    "inquirer": "^7.0.0",
+    "json-format": "^1.0.1",
     "mocha": "^6.2.2",
     "rollup": "^1.27.5",
     "rollup-plugin-babel": "^4.3.3"
