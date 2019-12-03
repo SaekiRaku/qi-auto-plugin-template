@@ -78,6 +78,8 @@ inquirer.prompt(inquirerConfig).then(answer => {
 
     if (answer.clean) {
         delete package.scripts.init;
+        delete package.devDependencies.inquirer;
+        delete package.devDependencies["json-format"];
         fs.unlinkSync("./init.js");
     }
 
