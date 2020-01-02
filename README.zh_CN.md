@@ -51,8 +51,8 @@ npm run test
 
 ### 模板结构
 
-- **common** - 为该模板提供有用的信息和方法
-- **constructor** - `Rollup` 的配置和开发及编译操作。
+<!-- - **common** - 为该模板提供有用的信息和方法 -->
+<!-- - **constructor** - `Rollup` 的配置和开发及编译操作。 -->
 - **source** - 插件源代码。
 - **dist** - 插件编译结果。
 - **test** - （可选）插件的测试用例。

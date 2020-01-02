@@ -51,8 +51,8 @@ npm run test
 
 ### Template Structure
 
-- **common** - Usefull info and function for this template.
-- **constructor** - `Rollup` config and operation of development and build.
+<!-- - **common** - Usefull info and function for this template. -->
+<!-- - **constructor** - `Rollup` config and operation of development and build. -->
 - **source** - The source code of your plugin.
 - **dist** - The build result of your plugin.
 - **test** - (Optional) The test case for your plugin.

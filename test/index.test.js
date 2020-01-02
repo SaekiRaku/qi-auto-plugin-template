@@ -5,7 +5,7 @@ describe("qi-auto-plugin-template", function () {
         let auto = new qiauto({
             "task1": {
                 module: require("../dist/index.js"),
-                directory: common.path.EXAMPLE
+                directory: __dirname
             }
         });
 
